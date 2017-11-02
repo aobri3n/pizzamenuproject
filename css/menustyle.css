@@ -11,10 +11,9 @@
 }
 
 #totalPrice{
-	width:200px;
-	height:190px;
+
 	margin:0 auto;
-	float:right;
+	float:left;
 }
 
 .left{
@@ -36,6 +35,13 @@
 	float:left;
 }
 
+#showText2{
+	width:200px;
+	height:190px;
+	margin:0px auto;
+	float:right;
+}
+
 #cart{
 	top:0;
 	margin:0px auto;
@@ -50,5 +56,6 @@
 }
 
 #veggies{
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
+
