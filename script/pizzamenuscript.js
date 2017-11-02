@@ -1,6 +1,5 @@
 function getReceipt() {
 	var text1 = "<h3>You Ordered:</h3>";
-	var text2 = ""
 	var runningTotal = 0;
 	var sizeTotal = 0;
 	var sizeArray = document.getElementsByClassName("size");
@@ -8,27 +7,22 @@ function getReceipt() {
 		if (sizeArray[i].checked) {
 			var selectedSize = sizeArray[i].value;
 			text1 = text1+selectedSize+"<br>";
-			
 		}
 	}
 	if (selectedSize === "Personal Pizza") {
 		sizeTotal = 6;
-		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Medium Pizza") {
 		sizeTotal = 10;
-		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Large Pizza") {
 		sizeTotal = 14;
-		text2 = text2+sizeTotal+"<br>";
 	} else if (selectedSize === "Extra Large Pizza") {
 		sizeTotal = 16;
-		text2 = text2+sizeTotal+"<br>";
 	}
 	runningTotal = sizeTotal;
 	console.log(selectedSize+" = $"+sizeTotal+".00");
 	console.log("size text1: "+text1);
 	console.log("subtotal: $"+runningTotal+".00");
-	getMeat(runningTotal,text1); 
+	getMeat(runningTotal,text1);
 };
 
 
@@ -133,7 +127,6 @@ function getVeggies(runningTotal,text1) {
 	console.log("veggies text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
 	document.getElementById("showText").innerHTML=text1;
-	document.getElementById("showText2").innerHTML=text2;
 	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	
 	};
