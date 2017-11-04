@@ -1,6 +1,6 @@
 function getReceipt() {
 	var text1 = "<h3>You Ordered:</h3>";
-	var text2 = "<h3>Subtotal:</h3>";
+	
 	var runningTotal = 0;
 	var sizeTotal = 0;
 	var sizeArray = document.getElementsByClassName("size");
@@ -128,7 +128,6 @@ function getVeggies(runningTotal,text1) {
 	console.log("veggies text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
 	document.getElementById("showText").innerHTML=text1;
-	
-	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+	document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 	
 	};

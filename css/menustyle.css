@@ -1,8 +1,26 @@
+body {
+		background-image:url(../pictures/pizza.jpeg);
+		background-size: 100%;
+        background-repeat: no-repeat;
+	
+}
+
+#options {
+	text-align:center;
+	background-color:black;
+	opacity:.9;
+	
+}
+
+#pizzamenu {
+	text-align:center;
+}
 
 #menuBG{
 	width:400px;
 	height:470px;
 	margin:10px auto;
+
 }
 
 #frmMenu{
@@ -10,44 +28,60 @@
 	height:200px;
 }
 
-#totalPrice{
 
-	margin:0 auto;
-	float:left;
-}
 
 .left{
 	width:200px;
 	height:200px;
 	float:left;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	
+	color:white;
 }
 		
 .right{
 	width:200px;
 	height:200px;
 	float:right;
-}
-
-#showText{
-	width:200px;
-	height:190px;
-	margin:0px auto;
-	float:left;
-}
-
-#showText2{
-	width:200px;
-	height:190px;
-	margin:0px auto;
-	float:right;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	
+	color:white;
 }
 
 #cart{
 	top:0;
-	margin:0px auto;
-	width:400px;
-	height:200px;
+	margin:30px auto;
+	display:flex;
+	flex-direction:column;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	color: white;
+	
+	
+	
 }
+
+#showText{
+	
+	
+	float:left;
+	
+}
+
+#totalPrice{
+
+
+	float:right;
+}
+
+
+
+
 
 #btnOrder{
 	margin:10px 0px 0px 100px;

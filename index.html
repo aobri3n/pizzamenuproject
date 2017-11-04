@@ -7,18 +7,18 @@
 		<link rel="stylesheet" href="./css/menustyle.css">
 	</head>
 	<body>
-		<div id="menuBG">
-		<h1>Pizza Drill</h1>
+		<div class="container" id="menuBG">
+		<h1 id="pizzamenu">Pizza Menu</h1>
 			<form id="frmMenu">
 			<div class="menu left">
-				<h3>Size:</h3>
+				<h3 id="options">Size:</h3>
 				<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
 				<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
 				<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br>
 				<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
 			</div>
 			<div class="menu right">
-				<h3>Meats:</h3>
+				<h3 id="options">Meats:</h3>
 				<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
 				<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage<br>
 				<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br>
@@ -27,13 +27,13 @@
 				<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
 			</div>
 			<div class="menu left">
-				<h3>Cheese:</h3>
+				<h3 id="options">Cheese:</h3>
 				<input class="cheese" type="radio" name="Cheese" value="Regular Cheese"> Regular Cheese<br>
 				<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
 				<input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese<br>
 			</div>
 			<div class="menu right">
-				<h3>Crust:</h3>
+				<h3 id="options">Crust:</h3>
 				<input class="crust" type="radio" name="Crust" value="Plain Crust"> Plain Crust<br>
 				<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
 				<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
@@ -41,14 +41,14 @@
 				<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
 			</div>
 			<div class="menu left">
-				<h3>Sauce:</h3>
+				<h3 id="options">Sauce:</h3>
 				<input class="sauce" type="radio" name="Sauce" value="Marinara sauce"> Marinara sauce<br>
 				<input class="sauce" type="radio" name="Sauce" value="White sauce">White sauce<br>
 				<input class="sauce" type="radio" name="Sauce" value="Barbeque sauce"> Barbeque sauce<br>
 				<input class="sauce" type="radio" name="Sauce" value="No sauce"> No sauce<br>
 			</div>
 			<div id=veggies class="menu right">
-				<h3>Veggies:</h3>
+				<h3 id="options">Veggies:</h3>
 				<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> Tomatoes<br>
 				<input class="veggies" type="checkbox" name="Veggies" value="Onions"> Onions<br>
 				<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives<br>
@@ -63,9 +63,9 @@
 				value="Place Order">
 				<br>
 			
-			<div id="cart">
+			<div class="flex-container" id="cart">
 				<div id="showText"></div>
-				<div id="showText2"></div>
+				<div id="showText"></div>
 				<div id="totalPrice"></div>
 				
 			</div>
