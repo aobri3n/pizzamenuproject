@@ -1,15 +1,14 @@
 body {
-		background-image:url(../pictures/pizza.jpeg);
-		background-size: 100%;
-        background-repeat: no-repeat;
-	
+	background-image:url(../pictures/pizza.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 #options {
 	text-align:center;
 	background-color:black;
 	opacity:.9;
-	
+	margin:10px;
 }
 
 #pizzamenu {
@@ -20,15 +19,12 @@ body {
 	width:400px;
 	height:470px;
 	margin:10px auto;
-
 }
 
 #frmMenu{
 	width:400px;
 	height:200px;
 }
-
-
 
 .left{
 	width:200px;
@@ -37,7 +33,6 @@ body {
 	background-color:#234e7a;
 	opacity:.9;
 	box-shadow: 10px 10px 5px #888888;
-	
 	color:white;
 }
 		
@@ -54,34 +49,49 @@ body {
 
 #cart{
 	top:0;
-	margin:30px auto;
+	margin:10px auto;
 	display:flex;
-	flex-direction:column;
+	
 	background-color:#234e7a;
 	opacity:.9;
 	box-shadow: 10px 10px 5px #888888;
 	color: white;
-	
-	
-	
+	overflow:hidden;
 }
 
 #showText{
-	
-	
+	width:50%;
 	float:left;
-	
+	display:inline-block;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	color: white;
+	overflow:hidden;
+}
+
+#showText2{
+	width:50%;
+	float:right;
+	display:inline-block;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	color: white;
+	overflow:hidden;
 }
 
 #totalPrice{
-
-
-	float:right;
+	
+	background-color:red;
+	width:100%;
+	background-color:#234e7a;
+	opacity:.9;
+	box-shadow: 10px 10px 5px #888888;
+	color: white;
+	overflow:hidden;
+	
 }
-
-
-
-
 
 #btnOrder{
 	margin:10px 0px 0px 100px;
@@ -92,4 +102,3 @@ body {
 #veggies{
 	padding-bottom: 20px;
 }
-
